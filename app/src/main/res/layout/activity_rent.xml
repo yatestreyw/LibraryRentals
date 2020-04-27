@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/BasicStyle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:text="Name: "
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        style="@style/BasicStyle"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:hint="Enter your name"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvDropdown"
+        style="@style/BasicStyle"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:text="Choose a book to rent: "
+        android:layout_centerHorizontal="true"
+
+        />
+    <Spinner
+        android:id="@+id/dropdown"
+        style="@style/BasicStyle"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/tvDropdown"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btnRent"
+        style="@style/BasicStyle"
+        android:layout_below="@+id/dropdown"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Rent Book"
+        android:onClick="rent"
+        />
+</RelativeLayout>
